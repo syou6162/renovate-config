@@ -70,6 +70,17 @@
             "major": {
                 "automerge": false
             }
+        },
+        {
+            "matchDepTypes": [
+                "devDependencies"
+            ],
+            "matchUpdateTypes": [
+                "patch",
+                "minor"
+            ],
+            "groupName": "devDependencies (non-major)",
+            "automerge": true
         }
     ]
 }
