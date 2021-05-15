@@ -29,6 +29,15 @@
             }
         },
         {
+            "matchPackagePatterns": [
+                "^eslint"
+            ],
+            "automerge": true,
+            "major": {
+                "automerge": false
+            }
+        },
+        {
             "matchPackageNames": [
                 "aws-sdk"
             ],
