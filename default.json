@@ -33,7 +33,11 @@
                 "aws-sdk"
             ],
             "automerge": true,
-            "matchUpdateTypes": ["patch", "pin", "digest"]
+            "matchUpdateTypes": [
+                "patch",
+                "pin",
+                "digest"
+            ]
         },
         {
             "groupName": "linters",
