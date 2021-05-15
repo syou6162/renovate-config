@@ -65,7 +65,11 @@
             "matchSourceUrlPrefixes": [
                 "https://github.com/facebook/jest",
                 "https://github.com/kulshekhar/ts-jest"
-            ]
+            ],
+            "automerge": true,
+            "major": {
+                "automerge": false
+            }
         }
     ]
 }
