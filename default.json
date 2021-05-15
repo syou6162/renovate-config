@@ -29,6 +29,17 @@
             }
         },
         {
+            "matchPackageNames": [
+                "aws-sdk"
+            ],
+            "automerge": true,
+            "matchUpdateTypes": [
+                "patch",
+                "pin",
+                "digest"
+            ]
+        },
+        {
             "groupName": "linters",
             "extends": [
                 "packages:linters"
