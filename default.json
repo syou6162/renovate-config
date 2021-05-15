@@ -1,0 +1,51 @@
+{
+    "extends": [
+        "config:base"
+    ],
+    "timezone": "Asia/Tokyo",
+    "schedule": [
+        "every weekend"
+    ],
+    "labels": [
+        "renovate"
+    ],
+    "dockerfile": {
+        "fileMatch": [
+            "(^|/)Dockerfile-[^/]*$"
+        ]
+    },
+    "postUpdateOptions": [
+        "yarnDedupeHighest",
+        "gomodTidy"
+    ],
+    "packageRules": [
+        {
+            "matchPackagePatterns": [
+                "^@types/"
+            ],
+            "automerge": true,
+            "major": {
+                "automerge": false
+            }
+        },
+        {
+            "groupName": "linters",
+            "extends": [
+                "packages:linters"
+            ],
+            "packageNames": [
+                "prettier"
+            ],
+            "packagePatterns": [
+                "^@typescript-eslint/"
+            ]
+        },
+        {
+            "groupName": "jest",
+            "matchSourceUrlPrefixes": [
+                "https://github.com/facebook/jest",
+                "https://github.com/kulshekhar/ts-jest"
+            ]
+        }
+    ]
+}
