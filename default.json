@@ -39,7 +39,8 @@
         },
         {
             "matchPackageNames": [
-                "aws-sdk"
+                "aws-sdk",
+                "firebase"
             ],
             "automerge": true,
             "matchUpdateTypes": [
