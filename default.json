@@ -40,7 +40,8 @@
         {
             "matchPackageNames": [
                 "aws-sdk",
-                "firebase"
+                "firebase",
+                "mackerel/mkr"
             ],
             "automerge": true,
             "matchUpdateTypes": [
