@@ -41,6 +41,8 @@
             "matchPackageNames": [
                 "aws-sdk",
                 "github.com/aws/aws-sdk-go",
+                "google.golang.org",
+                "cloud.google.com/go",
                 "firebase",
                 "mackerel/mkr"
             ],
