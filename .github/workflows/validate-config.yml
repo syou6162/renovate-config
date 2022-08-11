@@ -7,16 +7,12 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     env:
       CI: true
-
     strategy:
       matrix:
-        node-version: [12.x]
-
+        node-version: [14.x, 16.x, 18.x]
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
