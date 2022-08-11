@@ -28,9 +28,6 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node
       - name: Validate renovate config
-        run: |
-          for file in *.json
-          do
-            echo "[CI] Let's validate $file"
-            RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
-          done
+        uses: rinchsan/renovate-config-validator@v0.0.0
+        with:
+          pattern: '*.json' # Regular expression for filename to validate, default to *.json
