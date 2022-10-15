@@ -22,6 +22,6 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node
       - name: Validate renovate config
-        uses: rinchsan/renovate-config-validator@v0.0.11
+        uses: rinchsan/renovate-config-validator@v0.0.12
         with:
           pattern: '*.json' # Regular expression for filename to validate, default to *.json
